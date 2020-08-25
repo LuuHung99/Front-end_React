@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*Bien trong css*/
+:root {
+  --primary-color: blue; /*ten bien: gia tri */
+}
+
+p.title::first-letter {
+  --primary-color: red;
+  color: var(--primary-color);
+  font-size: 50px;
+}
+
+div.box {
+  width: 55rem;
+  height: 55rem;
+  /* background-image: url('../image/hello.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  background: yellow url('../image/hello.jpg') no-repeat center center;
+  
+}
+

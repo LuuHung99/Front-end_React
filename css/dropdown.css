@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 5rem;
+  background-color: rgb(120,180,61);
+  padding: 0rem 26rem;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  cursor: pointer;
+  padding-left: 1rem; 
+  text-align: center;
+}
+
+.nav> ul {
+  line-height: 1.5rem;
+  padding-top: 0.5rem;
+  
+}
+
+.nav__link {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.nav__item:hover, .nav__link:hover {
+  background-color: rgb(96,154,38);
+  text-decoration-line: underline;
+}
+
+.fa-search {
+  color: white;
+  font-size: 2.5rem;
+  padding-left: 1rem;
+
+}

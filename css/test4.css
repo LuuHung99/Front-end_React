@@ -1,0 +1,74 @@
+/*Reset trinh duyet: Cho các phần tử nằm sát đường viền*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* .content {
+  display: flex;
+} */
+
+body {
+  padding-top: 50px;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: blue;
+  position: fixed;
+  top: 0;
+
+}
+
+
+.box-1, .box-2 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid blue;
+}
+
+.box-3, .box-4 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid blue;
+  /* float: left; */
+  /* display: inline; /*Mất 2 thuộc tính width,height*/   */
+  /* display: inline-block; Tạo ra khoảng trắng */
+}
+.box-4 {
+  border: 1px solid black;
+}
+.box-4 > a{
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.box-5 > p {
+  z-index: 1; /*Cơ chế xếp chồng lên nhau*/
+  position: relative;
+}
+
+.box-5 > img {
+  width: 150px;
+  height: 150px;
+  /* position: relative; */
+  position: absolute;  /*Định vị theo vị trí mặc định */
+  top: 0;
+  left: 0px;
+  z-index: 0;
+  
+  
+}
+
+.box-5 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid yellow;
+  position: relative;
+}
+.clear {
+  clear: both;
+}

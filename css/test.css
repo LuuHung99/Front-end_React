@@ -1,0 +1,150 @@
+@import 'test2.css';
+
+/* h2{
+  color: blue;
+} */
+
+.title-2{/*Ưu tiên */
+  color: red;
+}
+
+input[type='text']{
+  border: 1px solid red;
+}
+
+input[class~='input']{
+  border: 1px solid blue;
+}
+
+input[class*='in']{
+  border: 1px solid rgb(0, 255, 13);
+}
+
+/* Bắt đầu là ký tự đầu tiên */
+a[href^='https']{
+  color:red;
+}
+
+/* Bắt đầu là ký tự cuối cùng */
+a[href$='com']{ 
+  color:violet;
+}
+
+
+/* Đứng sau từ new bắt buộc phải có dấu (-), giá trị bắt đầu từ đầu */
+a[class|='new'] {
+  color: rgb(0, 128, 43);
+}
+
+div.box + div.content {
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+}
+
+div.box ~ div.content-2 {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(0, 255, 98);
+}
+
+/*Example*/
+/* div.container div.header > div.logo + div.banner > h5,h4,h3{
+  color: rgb(0, 255, 128);
+} */
+
+/* Pseudo class selector */
+div.wrapper :first-child {
+  color: red;
+}
+
+/* Tìm đến thành phần đầu tiên của những thằng nằm bên trong */
+div.wrapper :first-of-type {
+  color: yellow;
+}
+
+div.wrapper :last-child {
+  color: green;
+}
+
+div.wrapper :last-of-type {
+  color: rgb(25, 0, 255);
+}
+
+div.wrapper :nth-child(3) {
+  color: rgb(128, 115, 0);
+}
+
+div.wrapper :nth-of-type(3) {
+  color: pink;
+}
+
+div.wrapper :nth-last-child(2) {
+  color: orange;
+}
+
+div.wrapper :nth-last-of-type(2) {
+  color: gold;
+}
+
+
+div.parent :only-child {
+  color: red;
+}
+
+div.example input[class|='input']:focus {
+  width:500px;
+  height: 40px;
+  border: 3px solid red;
+}
+
+div.example input[type|='checkbox']:checked, input[type|='radio']:checked {
+  width:100px;
+  height: 100px;
+  
+}
+
+/* Kích vào radio thì thẻ p sẽ chuyển màu đỏ */
+input[type|='radio']:checked + p {
+  color:red;
+}
+
+
+div.example a:active {
+  color: yellow;
+}
+
+/* Những thằng đã kích rồi */
+div.example a:visited {
+  color: rgb(105, 22, 84);
+}
+
+
+/* Link chưa từng vào bao giờ */
+div.example a:link {
+  color: pink;
+}
+
+div.example a:hover {
+  color: blue;
+}
+
+div.example a:hover ~ div.text-box {
+  width:300px;
+  height: 300px;
+  background-color: yellow;
+  position: relative;
+  top: -300px;
+  left: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+

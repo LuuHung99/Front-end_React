@@ -1,0 +1,243 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+i {
+  color: #fff;
+}
+
+.container {
+  background-color: #78b43d;
+  height: 5rem;
+}
+
+.header {
+  width: 100.5rem;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+.header__categories {
+  width: 10rem;
+  height: 100%;
+  position: relative;
+}
+
+.header__categories:hover .header__categories-list {
+  display: block;
+}
+
+.header__categories button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__categories button {
+  border-left: 1px solid #90c95a;
+  border-right: 1px solid #90c95a;
+}
+
+.header__categories button i,
+.header__menu button i {
+  font-size: 1.9rem;
+  margin-top: 0.2rem;
+}
+
+.header__categories button p,
+.header__menu button p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.header__categories-list {
+  position: absolute;
+  width: 18.5rem;
+  background-color: #aad862;
+  right: 1.25rem;
+  display: none;
+}
+
+.header__categories-list li {
+  position: relative;
+  height: 3rem;
+  border-bottom: 1px solid #78b43d;
+}
+
+.header__categories-list .item:hover {
+  background-color: #78b43d;
+}
+.header__categories-list .item:hover > a {
+  color: #fff;
+}
+
+.header__categories-list li a {
+  display: block;
+  padding: 0 1.5rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #222;
+  line-height: 3rem;
+}
+.header__categories-list li a i,
+.menu-item ul li a i {
+  margin-right: 0.7rem;
+  font-size: 1.1rem;
+}
+
+.item .item-list {
+  position: absolute;
+  background-color: #78b43d;
+  display: none;
+  width: 100%;
+  top: 0;
+  left: 100%;
+}
+
+.item .item-list li {
+  border-bottom: 1px solid #aad862;
+}
+
+.item:hover .item-list {
+  display: block;
+}
+.item .item-list li:hover a {
+  color: #fff;
+}
+
+.header__menu,
+.header__menu-list,
+.header__menu-list li,
+.header__menu button,
+.header__menu button a {
+  height: 100%;
+}
+
+.header__menu-list {
+  display: flex;
+  margin-left: 1.5rem;
+}
+
+.header__menu button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.menu-item:hover button {
+  background-color: #609a26;
+}
+
+.header__menu button:hover p {
+  text-decoration: underline;
+}
+
+.header__menu button a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-item .hot__image {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item ul {
+  position: absolute;
+  background-color: #aad862;
+  width: 22.7rem;
+  display: none;
+}
+
+.menu-item ul li {
+  height: 3rem;
+  border-bottom: 1px solid #78b43d;
+}
+
+.menu-item:hover ul {
+  display: block;
+}
+
+.menu-item ul li:hover {
+  background-color: #78b43d;
+}
+
+.menu-item ul li a {
+  display: block;
+  padding: 0 1.5rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #222;
+  line-height: 3rem;
+}
+
+.header__categories-list .item:hover > a {
+  color: #fff;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.search__bar {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  display: flex;
+  right: 0;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.search__bar button {
+  width: 50px;
+  cursor: pointer;
+  border-left: 1px solid #90c95a;
+  border-right: 1px solid #90c95a;
+}
+
+.search__bar:hover {
+  width: 100%;
+}
+.search__bar:hover input {
+  display: block;
+}
+
+.search__bar-input {
+  flex-grow: 1;
+  margin: 0.5rem 0.5rem;
+  height: 70%;
+  border: none;
+  display: none;
+}
+
