@@ -41,18 +41,22 @@ input, textarea, button {
 }
 
 :root {
+  --color-twitter: #56c7ee;
   --primary-color: #64c29e;
   --title-color: #353738;
   --text-color: #848789;
+  --text-button: #ffffff;
+  --bg-slide: #a9afb3;
   --bg-light: #f7f7f7;
   --bg-line: #d7d7d7;
   --bg-dark: #282f35;
+  --bg-mailing: #ffffff;
   --border-input: #d3d7d9;
   --color-text-input: #cdcdcd;
 }
 
 .wraper {
-  background-color: #f7f7f7;
+  background-color: var(--bg-line);
   max-width: 160rem;
   margin: 0 auto;
 }
@@ -86,6 +90,7 @@ input, textarea, button {
   bottom: 0;
   right: 0;
   font-size: 2rem;
+  cursor: pointer;
 
 }
 
@@ -95,6 +100,7 @@ input, textarea, button {
   bottom: 0;
   right: 0;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .nav__link {
@@ -142,9 +148,7 @@ input, textarea, button {
 /*feature list*/
 .feature__item {
   display: flex;
-  flex-flow: row wrap;
   height: 60rem;
-  overflow: hidden;
 }
 
 .feature__item-img{
@@ -152,7 +156,7 @@ input, textarea, button {
   position: relative;
 }
 
-.feature__item-img .img__bg {
+.img__bg {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -165,6 +169,318 @@ input, textarea, button {
   transform: translate(-50%, -50%);
   z-index: 2;
 }
+
+.feature__item-content {
+  width: 33%;
+}
+
+.feature__item-content .feature__item-content-bottom {
+  position: relative;
+}
+
+.feature__item-content .feature__item-content-bottom:before {
+  content: '';
+  position: absolute;
+  top: 1;
+  left: 50%;
+  transform: translate(1, -50%);
+  border-top: 1.5rem solid white;
+  width: 0;
+}
+
+.feature__item-content .feature__img-top {
+  margin-top: 7rem;
+}
+
+.feature__item-content h3 {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--title-color);
+  font-weight: bold;
+  text-align: center;
+  word-spacing:  0.5rem;
+  letter-spacing: 0.4rem;
+}
+
+.feature__item-content p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  font-weight: thin;
+  margin: 1.5rem 7rem;
+}
+
+.feature__item-content hr {
+  width: 5rem;
+  height: 0.1rem;
+  background-color: var(--bg-line);
+  margin-top: 4rem;
+  margin-left: 24.2rem;
+}
+
+.feature__item-content-bottom .img__bg {
+  margin-top: 4.4rem;
+}
+
+.feature__item3 {
+  display: flex;
+  height: 60rem;
+}
+
+.feature__item3-img {
+  width: 33%;
+}
+
+.feature__img3-top {
+  margin: 0 auto 1.5rem;
+}
+
+.img3__bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature__item3-content {
+  width: 34%;
+  max-height: 60rem;
+}
+
+.feature__item3-content .feature__img3-top {
+  margin-top: 7rem;
+}
+
+.feature__item3-content h3 {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--title-color);
+  font-weight: bold;
+  text-align: center;
+  word-spacing:  0.5rem;
+  letter-spacing: 0.4rem;
+  margin-top: 3.3rem;
+}
+
+.feature__item3-content p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  font-weight: thin;
+  margin: 1.9rem 7rem;
+}
+
+.feature__item3-content hr {
+  width: 5rem;
+  height: 0.1rem;
+  background-color: var(--bg-line);
+  margin-top: 3rem;
+  margin-left: 24.2rem;
+}
+
+.feature__item3-content-bottom .img3__bg {
+  margin-top: 3rem;
+}
+
+/*twitter*/
+.twitter {
+  width: 100%;
+  height: 47rem;
+}
+
+.twitter__container {
+  margin-top: 12.5rem;
+}
+
+.twitter .twitter__icon {
+  font-size: 3rem;
+  color: var(--color-twitter);
+  margin-left: 74rem;
+}
+
+.twitter .twitter__title {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: var(--title-color);
+  font-weight: bold;
+  text-align: center;
+  word-spacing:  0.4rem;
+  letter-spacing: 0.4rem;
+  margin-top: 4rem;
+}
+
+.twitter .twitter__text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--text-color);
+  margin: 0 auto;
+  font-weight: thin;
+  margin: 3rem 28rem 0 24rem; 
+}
+
+.twitter .twitter__slide {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  padding-top: 11rem;
+  padding-left: 71.5rem;
+}
+
+.twitter .twitter__slide input {
+  margin: 0.5rem;
+  color: var(--bg-slide);
+}
+
+.twitter .twitter__slide input:active {
+
+}
+
+.shop {
+  max-width: 100%;
+  height: 73.5rem;
+}
+
+.shop .shop__list {
+  max-height: 51.5rem;
+  display: flex;
+}
+
+.shop .shop__left {
+  width: 33%;
+}
+
+.shop .shop__left .shop__left__top {
+  display: flex;
+}
+
+.shop .shop__center {
+  display: flex;
+  width: 34%;
+}
+
+.shop .shop__right {
+  width: 33%;
+  overflow: hidden;
+}
+
+.shop .shop__right .shop__right__bottom {
+  display: flex;
+}
+
+.shop .shop__discover {
+  width: 100%;
+  height: 21.5rem;
+  position: relative;
+  background-color: var(--bg-dark);
+}
+
+.shop .shop__discover .shop__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  height: 5rem;
+  border: 0.1px solid var(--border-input);
+  background-color: var(--bg-dark);
+  text-transform: uppercase;
+  color: var(--color-text-input);
+  letter-spacing: 0.4rem;
+  font-weight: bold;
+}
+
+.mailing {
+  text-align: center;
+  width: 100%;
+  height: 47rem;
+  position: relative;
+  background-color: var(--bg-mailing);
+}
+
+.mailing .mailing__logo, .mailing .mailing__search {  
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mailing .mailing__paragraph {
+  padding-top: 4rem;
+  margin-left: -2.2rem;
+  font-size: 1.8rem;
+}
+
+.mailing .mailing__search {
+  padding-top: 26rem;
+  display: flex;
+}
+
+.mailing .mailing__search .mailing__input {
+  width: 40rem;
+  height: 6rem;
+  border: 0.1rem solid var(--border-input);
+  position: relative;
+}
+
+.mailing .mailing__search input[type="text"] {
+  position: absolute;
+  top: 30%;
+  left: 1.5rem;
+  width: 80%;
+  font-style: italic;
+  font-size: 1.6rem;
+}
+
+.mailing .mailing__search .mailing__go {
+  width: 12.5rem;
+  height: 6rem;
+  padding-top: 2rem;
+  text-transform: uppercase;
+  color: var(--text-button);
+  font-size: 1.8rem; 
+  background-color: var(--primary-color);
+  margin-left: 1rem;
+}
+
+.footer {
+  width: 100%;
+  height: 15rem;
+  font-size: 1.6rem;
+  
+}
+
+.footer__nav {
+  display: flex;
+  margin: 10rem 25rem;
+  flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.footer .footer__item {
+  display: flex; 
+}
+
+.footer .footer__item .footer__img {
+  padding: 1rem;
+}
+
+.footer .footer__item p {
+  margin-top: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
 
 /* .about_us {
   height: 47rem;
