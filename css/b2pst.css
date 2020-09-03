@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input, textarea, button {
+  box-shadow: none;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --color--bg: #ff817e;
+  --color-text-button: #ffffff;
+  --color-heading: #1e2528;
+  --bg-button: #30383b;
+  --bg-slide: #dddddd;
+  --bg-slide1: #999999;
+  --bg-slide2: #f1f1f1;
+  --bg-slide3: #b3afa6;
+  --bg-testimonial: #fff9f8;
+  --bg-icon: #fcf5ee;
+}
+
+.container {
+  margin: 2rem 39rem;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner .banner__background {
+  position: absolute;
+  top: -12rem;
+  right: 0;
+  margin-left: 108rem;
+}
+
+.img__bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
