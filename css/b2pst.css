@@ -213,6 +213,7 @@ input, textarea, button {
   font-size: 1.6rem;
 }
 
+/*feature*/
 .feature {
   margin-top: 13rem;
   display: flex;
@@ -230,7 +231,15 @@ input, textarea, button {
   position: relative;
 }
 
-.feature__box2{
+.feature__box2__img, .feature__box2__text {
+  display: none;
+}
+
+.feature__box2__img:hover, .feature__box2__text:hover {
+  
+}
+
+.feature__box2:hover{
   background-color: var(--color-bg);
 }
 
@@ -243,6 +252,8 @@ input, textarea, button {
   margin-top: 20rem;
 }
 
+
+
 .feature__box2 p {
   position: absolute;
   margin-left: 15rem;
@@ -252,7 +263,6 @@ input, textarea, button {
 }
 
 /*Service*/
-/*section4*/
 .service {
   margin-top: 14.5rem;
   text-align: center;

@@ -91,3 +91,4 @@ function sumNumber(a,b) {
 
 let sum = sumNumber(1,2);
 console.log(sum);
+
